@@ -6,7 +6,7 @@ RESTy Phase 1: Begin work on the RESTy API testing application
 
 ### Link to GitHub repo [here](https://github.com/carlydekock/resty)
 
-### Link to PR [here](https://github.com/carlydekock/resty/pull/1)
+### Link to PR [here](https://github.com/carlydekock/resty/pull/2)
 
 ## Resources
 
@@ -16,6 +16,10 @@ RESTy Phase 1: Begin work on the RESTy API testing application
 ## Collaborators
 
 - Worked at a lab table with Jason D, Jason Q, and Seid
+
+## UML
+
+![image](assets/UML-lab26.png)
 
 ### Getting Started with Create React App
 
