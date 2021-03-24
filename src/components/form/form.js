@@ -11,96 +11,78 @@ import './form.scss';
 //   );
 // }
 
+//     // create a state object if needed to manage data the component needs
 
+export default function Form(props) {
 
-//1) define componenent as a class 2) needs to extend React.Component
-class Form extends React.Component {
-
-  // 3) define a constructor, run the super() function to get React powers
-  constructor() {
-    super();
-    // create a state object if needed to manage data the component needs
-    this.state = {
-      // people: ['Jacob'],
-      urls: [],
-      methods: [],
-    }
-
-    // take the special React 'this' that we gained from React.Component and makes sure that is alwaus refers tp react.Component
-    // this.addUrl = this.addUrl.bind(this);
-  }
-
-  // addUrl() {
+  // addUrlWithImplicitBinding = () => {
   //   this.setState({
-  //     urls: [...this.state.urls, ''],
-  //     input: '',
-  //   })
+  //     urls: [...this.state.urls, this.state.input],
+  //     methods: [...this.state.methods, this.state.method],
+  //   });
+  // }
+  // handleChange = (e) => {
+  //   // console.log(e.target.value);
+  //   this.setState({ input: e.target.value });
+  // }
+  // handleMethodChange = (e) => {
+  //   // console.log(e.target.value);
+  //   this.setState({ method: e.target.value })
   // }
 
-  addUrlWithImplicitBinding = () => {
-    this.setState({
-      urls: [...this.state.urls, this.state.input],
-      methods: [...this.state.methods, this.state.method],
-    });
+  //have a handle submit
+  // pass data back up to app for what it needs to use
+  async function handleSubmit (e) {
+    e.preventDefault();
+    // console.log(e.target.url.value);
+    // console.log(e.target.method.value);
+
+    const request = await fetch(e.target.url.value);
+    const data = await request.json();
+    const headers = request.headers;
+    // console.log('this is data from api', data);
+
+    // let fetchedData = data.results.map(dataObject => dataObject);
+    props.updateResults(data, headers);
+    
+    // props.updateResults(e.target);
   }
 
-  handleChange = (e) => {
-    // console.log(e.target.value);
-    this.setState({ input: e.target.value });
-  }
-
-  handleMethodChange = (e) => {
-    // console.log(e.target.value);
-    this.setState({ method: e.target.value })
-  }
-
-  render() {
+  // render() {
     return (
       <section className="App-form">
-        {/* <p>People</p> */}
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>URL:</label>
-          <input onChange={this.handleChange} type='text' value={this.state.input} />
-          <button type="button" onClick={this.addUrlWithImplicitBinding}>GO!</button>
-          {/* <button type="radio" value="GET">GET</button> */}
+          {/* <input className="input-text" name="url" type='text' value={this.state.input} /> */}
+          <input id="input-text" name="url" type='text' />
+          <button type="submit">GO!</button>
           <div id="rest-buttons">
             <div className="method-buttons">
               <label>
-                <input onChange={this.handleMethodChange} name="method" type="radio" value="GET" />
+                <input name="method" type="radio" value="GET" />
                 <span>GET</span>
               </label>
             </div>
             <div className="method-buttons">
               <label>
-                <input onChange={this.handleMethodChange} name="method" type="radio" value="POST" />
+                <input name="method" type="radio" value="POST" />
                 <span>POST</span>
               </label>
             </div>
             <div className="method-buttons">
               <label>
-                <input onChange={this.handleMethodChange} name="method" type="radio" value="PUT" />
+                <input name="method" type="radio" value="PUT" />
                 <span>PUT</span>
               </label>
             </div>
             <div className="method-buttons">
               <label>
-                <input onChange={this.handleMethodChange}  name="method" type="radio" value="DELETE" />
+                <input  name="method" type="radio" value="DELETE" />
                 <span>DELETE</span>
               </label>
             </div>
           </div>
         </form>
-        <article>
-          <ul className="selected-methods">
-            {this.state.methods.map((method) => <li>{method}</li>)}
-          </ul>
-          <ul className="selected-urls">
-            {this.state.urls.map((url) => <li>{url}</li>)}
-          </ul>
-        </article>
       </section>
     )
-  }
 }
-
-export default Form;
