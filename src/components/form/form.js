@@ -1,6 +1,5 @@
 import React from 'react';
 import './form.scss';
-// import Results from '../results/results.js'
 
 // function Form() {
 //   return(
@@ -12,49 +11,20 @@ import './form.scss';
 //   );
 // }
 
-
-
-// //1) define componenent as a class 2) needs to extend React.Component
-// class Form extends React.Component {
-
-//   // 3) define a constructor, run the super() function to get React powers
-//   constructor() {
-//     super();
 //     // create a state object if needed to manage data the component needs
-//     this.state = {
-//       // people: ['Jacob'],
-//       urls: [],
-//       methods: [],
-//     }
-
-//     // take the special React 'this' that we gained from React.Component and makes sure that is alwaus refers tp react.Component
-//     // this.addUrl = this.addUrl.bind(this);
-//   }
-
-  // addUrl() {
-  //   this.setState({
-  //     urls: [...this.state.urls, ''],
-  //     input: '',
-  //   })
-  // }
 
 export default function Form(props) {
 
-
-
-  //this goes to app.js
   // addUrlWithImplicitBinding = () => {
   //   this.setState({
   //     urls: [...this.state.urls, this.state.input],
   //     methods: [...this.state.methods, this.state.method],
   //   });
   // }
-  //this stays
   // handleChange = (e) => {
   //   // console.log(e.target.value);
   //   this.setState({ input: e.target.value });
   // }
-  // //this stays
   // handleMethodChange = (e) => {
   //   // console.log(e.target.value);
   //   this.setState({ method: e.target.value })
@@ -81,13 +51,11 @@ export default function Form(props) {
   // render() {
     return (
       <section className="App-form">
-        {/* <p>People</p> */}
         <form onSubmit={handleSubmit}>
           <label>URL:</label>
           {/* <input className="input-text" name="url" type='text' value={this.state.input} /> */}
           <input id="input-text" name="url" type='text' />
           <button type="submit">GO!</button>
-          {/* <button type="radio" value="GET">GET</button> */}
           <div id="rest-buttons">
             <div className="method-buttons">
               <label>
@@ -115,18 +83,6 @@ export default function Form(props) {
             </div>
           </div>
         </form>
-        {/* <Results /> */}
-        {/* <article>
-          <ul className="selected-methods">
-            {this.state.methods.map((method) => <li>{method}</li>)}
-          </ul>
-          <ul className="selected-urls">
-            {this.state.urls.map((url) => <li>{url}</li>)}
-          </ul>
-        </article> */}
       </section>
     )
-  // }
-// }
 }
-// export default Form;
