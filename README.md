@@ -1,25 +1,38 @@
-# Lab 26 - Component Based UI
+# Lab 27 - Props and State
 
 RESTy Phase 1: Begin work on the RESTy API testing application
+RESTy Phase 2: Connect RESTy with APIs, running live requests
 
 ## Author: Carly Dekock
 
 ### Link to GitHub repo [here](https://github.com/carlydekock/resty)
 
-### Link to PR [here](https://github.com/carlydekock/resty/pull/2)
+### Link to PR [here](https://github.com/carlydekock/resty/pull/3)
+
+### Link to deployment site on Netlify [here](https://gallant-williams-a2d538.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d072b087-7a18-4f2e-938b-20e157493172/deploy-status)](https://app.netlify.com/sites/gallant-williams-a2d538/deploys)
 
 ## Resources
 
 - Stackoverflow [article](https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover)
 - [JSFiddle](http://jsfiddle.net/zAFND/2/)
+- React JSON Pretty [docs](https://www.npmjs.com/package/react-json-pretty)
+- Testing Library docs from Jacob [here](https://testing-library.com/docs/ecosystem-user-event/)
 
 ## Collaborators
 
-- Worked at a lab table with Jason D, Jason Q, and Seid
+- Worked at a lab table with Jason D, Jason Q, Nick M, and Seid
 
 ## UML
 
+### Lab 26
+
 ![image](assets/UML-lab26.png)
+
+### Lab 27
+
+![image](assets/UML-lab27.png)
 
 ### Getting Started with Create React App
 
