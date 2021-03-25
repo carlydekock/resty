@@ -1,4 +1,4 @@
-# Lab 27 - Props and State
+# Lab 28 - Component Composition
 
 RESTy Phase 1: Begin work on the RESTy API testing application
 RESTy Phase 2: Connect RESTy with APIs, running live requests
@@ -8,7 +8,7 @@ RESTy Phase 3: Add conditional rendering to RESTy
 
 ### Link to GitHub repo [here](https://github.com/carlydekock/resty)
 
-### Link to PR [here](https://github.com/carlydekock/resty/pull/4)
+### Link to PR [here](https://github.com/carlydekock/resty/pull/5)
 
 ### Link to deployment site on Netlify [here](https://gallant-williams-a2d538.netlify.app/)
 
