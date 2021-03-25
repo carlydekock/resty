@@ -8,6 +8,9 @@ export default function Results(props){
   return (
     <article>
       <ul className="selected-methods">
+        <li></li>
+      </ul>
+      <ul>
         <li>Count</li>
         <li><JSONPretty id="json-pretty" data={props.data.count}></JSONPretty></li>
         {/* {this.state.methods.map((method) => <li>{method}</li>)} */}

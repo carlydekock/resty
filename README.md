@@ -7,7 +7,7 @@ RESTy Phase 2: Connect RESTy with APIs, running live requests
 
 ### Link to GitHub repo [here](https://github.com/carlydekock/resty)
 
-### Link to PR [here](https://github.com/carlydekock/resty/pull/3)
+### Link to PR [here](https://github.com/carlydekock/resty/pull/4)
 
 ### Link to deployment site on Netlify [here](https://gallant-williams-a2d538.netlify.app/)
 
@@ -19,6 +19,7 @@ RESTy Phase 2: Connect RESTy with APIs, running live requests
 - [JSFiddle](http://jsfiddle.net/zAFND/2/)
 - React JSON Pretty [docs](https://www.npmjs.com/package/react-json-pretty)
 - Testing Library docs from Jacob [here](https://testing-library.com/docs/ecosystem-user-event/)
+- Help from Kory Jackson (TA)
 
 ## Collaborators
 
@@ -33,6 +34,10 @@ RESTy Phase 2: Connect RESTy with APIs, running live requests
 ### Lab 27
 
 ![image](assets/UML-lab27.png)
+
+### Lab 28
+
+![image](assets/UML-lab28.png)
 
 ### Getting Started with Create React App
 
