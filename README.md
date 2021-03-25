@@ -2,6 +2,7 @@
 
 RESTy Phase 1: Begin work on the RESTy API testing application
 RESTy Phase 2: Connect RESTy with APIs, running live requests
+RESTy Phase 3: Add conditional rendering to RESTy
 
 ## Author: Carly Dekock
 
