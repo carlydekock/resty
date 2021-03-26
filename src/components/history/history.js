@@ -3,7 +3,7 @@ import React from 'react';
 import './history.scss';
 
 export default function History(props){
-
+  // console.log(props);
     return (
       <div className="history">
         <ul>

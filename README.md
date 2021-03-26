@@ -21,6 +21,9 @@ RESTy Phase 3: Add conditional rendering to RESTy
 - React JSON Pretty [docs](https://www.npmjs.com/package/react-json-pretty)
 - Testing Library docs from Jacob [here](https://testing-library.com/docs/ecosystem-user-event/)
 - Help from Kory Jackson (TA)
+- https://reactrouter.com/web/api/Link/component-reactcomponent
+- https://reactjs.org/docs/react-component.html
+
 
 ## Collaborators
 
