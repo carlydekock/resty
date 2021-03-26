@@ -1,14 +1,15 @@
-# Lab 28 - Component Composition
+# Lab 29 - Routing
 
 RESTy Phase 1: Begin work on the RESTy API testing application
 RESTy Phase 2: Connect RESTy with APIs, running live requests
 RESTy Phase 3: Add conditional rendering to RESTy
+RESTy Phase 4: Add routing and conditional rendering to RESTy
 
 ## Author: Carly Dekock
 
 ### Link to GitHub repo [here](https://github.com/carlydekock/resty)
 
-### Link to PR [here](https://github.com/carlydekock/resty/pull/5)
+### Link to PR [here](https://github.com/carlydekock/resty/pull/6)
 
 ### Link to deployment site on Netlify [here](https://gallant-williams-a2d538.netlify.app/)
 
@@ -21,6 +22,9 @@ RESTy Phase 3: Add conditional rendering to RESTy
 - React JSON Pretty [docs](https://www.npmjs.com/package/react-json-pretty)
 - Testing Library docs from Jacob [here](https://testing-library.com/docs/ecosystem-user-event/)
 - Help from Kory Jackson (TA)
+- https://reactrouter.com/web/api/Link/component-reactcomponent
+- https://reactjs.org/docs/react-component.html
+
 
 ## Collaborators
 
